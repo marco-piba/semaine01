@@ -72,7 +72,7 @@ class Employe5Test extends TestCase
     // Teste la visibilité du champ codePostal de la classe Agence
     public function testPersonnageChampCodePostal(){
         $agenceATester = new Agence();
-        $private = $this->isPropertyPrivate($agenceATester,'_CodePostal');
+        $private = $this->isPropertyPrivate($agenceATester,'_codePostal');
         $this->assertEquals($this->proprietePrivee,$private);
     }
     
@@ -121,7 +121,7 @@ class Employe5Test extends TestCase
     // Teste la visibilité du champ agence de la classe Employe
     public function testPersonnageChampAgence(){
         $employeATester = new Employe();
-        $private = $this->isPropertyPrivate($employeATester,'_Agence');
+        $private = $this->isPropertyPrivate($employeATester,'_agence');
         $this->assertEquals($this->proprietePrivee,$private);
     }
     

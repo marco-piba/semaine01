@@ -11,7 +11,7 @@ protected $_dateEmbauche;
 protected $_fonction;
 protected $_salaire;
 protected $_service;
-protected $_Agence;
+protected $_agence;
 protected $_enfants;
 public static $nbrEmploye=0;
 
@@ -37,7 +37,7 @@ public static $nbrEmploye=0;
      return $this->_service;
  } 
  public function getAgence(){
-     return $this->_Agence;
+     return $this->_agence;
  } 
  public function getEnfants(){
      return $this->_enfants;
@@ -64,7 +64,7 @@ public function setNom(string $nouvnom){
      return $this->_service=$nouvservice;
  } 
  public function setAgence(object $agence){
-     return $this->_Agence=$agence;
+     return $this->_agence=$agence;
  }
  public function setEnfants(object $enf){
      return $this->_enfants=$enf;

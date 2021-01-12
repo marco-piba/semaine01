@@ -19,7 +19,7 @@
         // Teste l'assignation du champ date d'embauche 
         public function testDirecteurValeurDateEmbauche() {
             $directeurATester = new Directeur();
-           // $dateTemoin = DateTime::createFromFormat("d/m/Y",$this->dateTemoin);
+            $dateTemoin = DateTime::createFromFormat("d/m/Y",$this->dateTemoin);
             $directeurATester->setDateEmbauche($this->dateTemoin);
             $this->assertEquals($this->dateTemoin,$directeurATester->getDateEmbauche());
         }
@@ -41,7 +41,7 @@
 
             $dateTemoin = "12/07/2015";
             $montantPrime = 6600;
-            $directeurATester->setdateEmbauche($dateTemoin);
+            $directeurATester->setDateEmbauche($dateTemoin);
             $this->assertEquals($montantPrime,$directeurATester->calculerPrime());
         }
         
