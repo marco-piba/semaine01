@@ -50,9 +50,9 @@ public function setNom(string $nouvnom){
      return $this->_nom=$nouvnom;
  } 
  public function setdateEmbauche(string $nouvdateEmbauche){
-    // $date= DateTime::createFromFormat("Y-m-d", $nouvdateEmbauche);
-     //$newDate=$date->format('d/m/Y');
-     return $this->_dateEmbauche=$nouvdateEmbauche;
+    $date= DateTime::createFromFormat("d/m/Y", $nouvdateEmbauche);
+    $date->format('d/m/Y');
+     return $this->_dateEmbauche=$date;
  } 
  public function setFonction(string $nouvposte){
      return $this->_fonction=$nouvposte;
@@ -78,11 +78,11 @@ public function setNom(string $nouvnom){
  
 
 public function getAnciennete(){
-    $embauche=DateTime::createFromFormat("d/m/Y",$this->_dateEmbauche);
-    $embauche->format('d/m/Y');
+    //$embauche=DateTime::createFromFormat("d/m/Y",$this->_dateEmbauche);
+    //$embauche->format('d/m/Y');
     $actuelDate=new dateTime();
     $actuelDate->format('d/m/Y');
-    $interval =$actuelDate->diff($embauche);
+    $interval =$actuelDate->diff($this->_dateEmbauche);
    return $interval->format('%y');
    //an(s) %m mois et %d jours que vous etes employés chez nous </br>
 

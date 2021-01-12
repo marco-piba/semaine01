@@ -21,7 +21,7 @@
             $directeurATester = new Directeur();
             $dateTemoin = DateTime::createFromFormat("d/m/Y",$this->dateTemoin);
             $directeurATester->setDateEmbauche($this->dateTemoin);
-            $this->assertEquals($this->dateTemoin,$directeurATester->getDateEmbauche());
+            $this->assertEquals($dateTemoin,$directeurATester->getDateEmbauche());
         }
         
         // Teste l'assignation du champ salaire 

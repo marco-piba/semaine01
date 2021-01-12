@@ -17,7 +17,7 @@ class Employe3Test extends TestCase
         $employeATester = new Employe();
         $dateTemoin = DateTime::createFromFormat("d/m/Y",$this->dateTemoin);
         $employeATester->setDateEmbauche($this->dateTemoin);
-        $this->assertEquals($this->dateTemoin,$employeATester->getDateEmbauche());
+        $this->assertEquals($dateTemoin,$employeATester->getDateEmbauche());
     }
 
     // Teste l'assignation du champ salaire 

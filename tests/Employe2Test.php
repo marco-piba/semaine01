@@ -14,7 +14,7 @@ class Employe2Test extends TestCase
         $employeATester = new Employe();    
         $dateTemoin = DateTime::createFromFormat("d/m/Y",$this->dateTemoin);
         $employeATester->setDateEmbauche($this->dateTemoin);
-        $this->assertEquals($this->dateTemoin,$employeATester->getDateEmbauche());
+        $this->assertEquals($dateTemoin,$employeATester->getDateEmbauche());
     }
     
     // Teste la fonction getAnciennete de la classe Employe
