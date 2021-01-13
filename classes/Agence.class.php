@@ -2,10 +2,10 @@
 
 class Agence {
 
-protected $_nom="non renseigné";
-protected $_adresse="non renseigné";
-protected $_codePostal="non renseigné";
-protected $_ville="non renseigné";
+protected $_nom;
+protected $_adresse;
+protected $_codePostal;
+protected $_ville;
 protected $_ModeRestauration;
 
 
